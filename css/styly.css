@@ -1,0 +1,331 @@
+* {
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***** reusable *****/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.heading-main h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.heading-main h2:after {
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #CC8B7B;
+    margin: 10px auto;
+}
+
+.empty-space {
+    height: 50px;
+}
+/***** header ****/
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url("/images/dort.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.nav-background {
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    background-color: rgba(0,0,0,0.5);
+    border-bottom: 1px solid #fff;
+    z-index: 100;
+}
+
+#logo img {
+    width: 200px;
+    position: absolute;
+    top: 23%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+}
+
+nav ul {
+    float: right;
+    margin-top: 10px;
+    
+    position: fixed;
+    margin-left: 46%; 
+    z-index: 100;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px
+    }
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    border-bottom:2px solid #fff;
+    transition: border-bottom 0.5s;
+}
+
+.header-text {
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+}
+
+.header-text h1 {
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 23px;
+    border: 1px solid #CC8B7B;
+    border-radius: 10px;
+    margin-top: 7px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background: #CC8B7B;
+    
+}
+.btn-full:hover,
+.btn-full:active {
+    background: #CC6464;
+    border: 1px solid #CC6464;
+    transition: 0.5s;
+}
+
+.btn-empty:link,
+.btn-empty:visited {
+    margin-left: 5px;
+    background: transparent;
+}
+
+.btn-empty:hover,
+.btn-empty:active {
+    background: #CC6464;
+    border: 1px solid #CC6464;
+    transition: 0.5s;
+}
+
+/***** MOBILE NAVIGATION ****/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 5px;
+    display: none;
+}
+
+/***** about us ****/
+.cake-example img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 4px 6px 9px #8f8b8b;
+}
+/***** our cakes ****/
+.cake-info img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 4px 6px 9px #8f8b8b;
+    }
+
+.text-cake {
+    margin-bottom: 20px;
+}
+
+.text-cake div {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    text-align: center;
+    border-radius: 50%;
+    padding: 12px;
+    float: left;
+    }
+
+.text-cake p {
+    margin-left: 70px;
+    font-size: 20px;
+}
+
+/***** references ****/
+.reference {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url("/images/dort.jpg");
+    background-attachment: fixed;    
+}
+
+.reference h2 {
+    color: #fff;
+    padding-top: 15px;
+}
+
+.reference h2:after {
+        border-bottom: 2px solid #fff;
+}
+
+.one-reference {
+    color: #fff;
+    font-size: 20px;
+}
+
+.one-reference p {
+    font-style: italic;
+    padding: 0 20px;
+}
+
+.photo-name {
+    margin-top: 10px;
+    margin-bottom: 60px;
+} 
+
+.photo-name img {
+    width: 60px;
+    border-radius: 50%;
+    float: left; 
+    margin-left: 20px;
+}
+
+.photo-name p {
+    padding: 13px;
+    margin-left: 85px;
+    font-style: normal;
+}
+
+/***** photogallery ****/
+.photo-segment li {
+    list-style-type: none;
+    background: #000;
+    overflow: hidden;
+    height: 400px;
+}
+.photo-segment img {
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+    opacity: 0.5;
+    transform: scale(1.15)
+}
+
+.photo-segment img:hover {
+    transition: transform 0.5s, opacity 0.5s;
+    transform: scale(1);
+    opacity: 1;
+}
+
+/***** contact form ****/
+.contact-form {
+    max-width: 700px;
+    text-align: center;
+}
+
+.contact-form input {
+    width: 80%;
+    margin: 5px 8px;
+    padding: 7px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.contact-form textarea {
+    width: 80%;
+    margin: 5px 8px;
+    padding: 7px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+    font-family: arial;
+}
+
+input[type="submit"] {
+    background: #CC8B7B;
+    color: #fff;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    transition: 0.3s;
+    background: #CC6464;
+    color: #fff;
+    font-size: 20px;
+}
+
+/***** Footer *****/
+.footer-page {
+    background: #CC8B7B;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.social {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.social p {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+.social p a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.social p a:link,
+.social p a:visited { 
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.social p a:hover,
+.social p a:active{ 
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+.footer-text {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+
+
+
+
+
+/***** Stop floating *****/
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}

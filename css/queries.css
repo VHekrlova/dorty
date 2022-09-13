@@ -1,0 +1,146 @@
+@media only screen and (max-width: 1150px) {
+    
+    /***** photogallery *****/
+     .photo-segment {
+         margin-left: 10px;
+         margin-right: 10px;   
+    } 
+    
+    /***** reference *****/
+    .col.span-1-of-3.one-reference {
+        width: 48%;
+        margin-left: 10px;
+    }
+    
+    .one-reference:nth-child(3) {
+        display: none;
+    }
+    
+ @media only screen and (max-width: 1025px){
+     nav ul li {
+         display: block;
+         margin-left: 65px;
+     }    
+      
+     .mobile-nav-back {
+         height: 156px;
+         margin-left: 260px;
+         position: fixed;
+         width: 100%;
+         background-color: rgba(0,0,0,0.8);
+         border-bottom: 1px solid #fff;
+         display: none;
+         z-index: 100;
+     }
+     
+     .mobile-nav-icon {
+         display: inline-block;
+         z-index: 200;
+         position: fixed;
+         right: 2%;    
+     }
+     
+     nav ul {
+         display: none;
+         z-index: 200;
+     }
+
+     nav ul li a:hover,
+     nav ul li a:active {
+        border-bottom:2px solid transparent;
+}
+    }
+
+
+@media only screen and (max-width: 1000px){
+    /***** our cakes *****/
+        .cake-info .span-1-of-2 {
+            width: 96%;
+    }
+        .cake-info img {
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        
+        .text-cake p {
+            padding-top: 10px;
+        }
+}  
+    
+@media only screen and (max-width: 850px) {
+    /***** photogallery *****/
+    .photo-segment li {
+             width: 100%;
+        
+    } 
+    
+    .photo-segment .col {
+	   margin-left: 0;
+    }
+    
+    /***** our cakes *****/
+    .text-cake p {
+        padding-top: 0;
+        }
+}
+    /***** about us ****/
+    .cake-example .span-1-of-2 {
+        width: 96%;
+    }
+    
+    .cake-example .col {
+        margin-left: 0;
+    }
+    
+    .cake-example img {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+@media only screen and (max-width: 760px) {
+    /***** header ****/
+    .header-text {
+    width: 100%;
+    left: 0%;
+    transform: translate(0%,0%);    
+        
+}
+    .header-text h1 {
+        text-align: center;
+}
+    }
+    
+    .btn {
+        display: block;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+    }
+    
+    .btn-empty:link,
+    .btn-empty:visited {
+        margin-left: 20px;
+    }
+
+    
+  
+    
+@media only screen and (max-width: 680px) {
+    
+    /***** reference *****/
+    .col.span-1-of-3.one-reference {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .photo-name {
+        float: right;
+        margin-right: 25px;    
+    }
+    
+    .one-reference:nth-child(3) {
+        display: contents;
+    }
+    }    
